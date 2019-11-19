@@ -39,5 +39,6 @@ for item in vars:
    print ("Device " + host_vars['netmiko']['host'])
    for neighbor in data_json["bgp-information"][0]["bgp-peer"]: 
      print ("session with " + neighbor["peer-address"][0]['data'] + " is "+ neighbor["peer-state"][0]['data'])  
+   dev.disconnect()
 
 
