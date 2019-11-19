@@ -1,0 +1,27 @@
+vMX1:
+  netmiko: 
+    device_type: juniper_junos
+    host: 100.123.1.0
+    username: jcluser
+    password: Juniper!1
+  local_asn: 101
+  neighbors:
+   - interface: ge-0/0/0
+     interface_description: "to vMX2"
+     asn: 104
+     peer_ip: 192.168.1.1 
+     local_ip: 192.168.1.0
+vMX2:
+  netmiko: 
+    device_type: juniper_junos
+    host: 100.123.1.1
+    username: jcluser
+    password: Juniper!1
+  local_asn: 104
+  neighbors:
+   - interface: ge-0/0/0
+     interface_description: "to vMX1"
+     asn: 101
+     peer_ip: 192.168.1.0 
+     local_ip: 192.168.1.1
+

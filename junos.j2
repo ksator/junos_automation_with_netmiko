@@ -1,0 +1,14 @@
+{% for neighbor in neighbors %}
+set interfaces {{ neighbor.interface }} description "{{ neighbor.interface_description }}"
+set interfaces ge-0/0/0 unit 0 family inet address {{ neighbor.local_ip }}/31
+{% endfor %}
+set protocols bgp group underlay import bgp-in
+set protocols bgp group underlay export bgp-out
+set protocols bgp group underlay type external
+set protocols bgp group underlay local-as {{ local_asn }}
+set protocols bgp group underlay multipath multiple-as
+{% for neighbor in neighbors %}
+set protocols bgp group underlay neighbor {{ neighbor.peer_ip }} peer-as {{ neighbor.asn }}
+{% endfor %}
+set policy-options policy-statement bgp-in then accept
+set policy-options policy-statement bgp-out then accept

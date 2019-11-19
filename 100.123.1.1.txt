@@ -1,0 +1,14 @@
+
+set interfaces ge-0/0/0 description "to vMX1"
+set interfaces ge-0/0/0 unit 0 family inet address 192.168.1.1/31
+
+set protocols bgp group underlay import bgp-in
+set protocols bgp group underlay export bgp-out
+set protocols bgp group underlay type external
+set protocols bgp group underlay local-as 104
+set protocols bgp group underlay multipath multiple-as
+
+set protocols bgp group underlay neighbor 192.168.1.0 peer-as 101
+
+set policy-options policy-statement bgp-in then accept
+set policy-options policy-statement bgp-out then accept
