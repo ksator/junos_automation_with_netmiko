@@ -3,6 +3,7 @@ This repo has Netmiko examples for Junos.
 It convers: 
 - connect to devices using Netmiko
 - generate devices configuration files from templates and vars
+- Load configuration files on devices using Netmiko
 - collect `show commands` in various format (JSON, XML, text) using Netmiko
 - Parse the data collected to validate some op states (BGP sessions state ...)
 
