@@ -1,0 +1,13 @@
+
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/17.4R1/junos">
+    <system-information>
+        <hardware-model>vmx</hardware-model>
+        <os-name>junos</os-name>
+        <os-version>17.4R1-S2.2</os-version>
+        <serial-number>VM5DD38DAF50</serial-number>
+        <host-name>vMX1</host-name>
+    </system-information>
+    <cli>
+        <banner></banner>
+    </cli>
+</rpc-reply>

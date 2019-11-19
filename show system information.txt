@@ -1,0 +1,5 @@
+
+Model: vmx
+Family: junos
+Junos: 17.4R1-S2.2
+Hostname: vMX1

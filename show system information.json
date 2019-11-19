@@ -1,0 +1,32 @@
+
+{
+    "system-information" : [
+    {
+        "hardware-model" : [
+        {
+            "data" : "vmx"
+        }
+        ], 
+        "os-name" : [
+        {
+            "data" : "junos"
+        }
+        ], 
+        "os-version" : [
+        {
+            "data" : "17.4R1-S2.2"
+        }
+        ], 
+        "serial-number" : [
+        {
+            "data" : "VM5DD38DAF50"
+        }
+        ], 
+        "host-name" : [
+        {
+            "data" : "vMX1"
+        }
+        ]
+    }
+    ]
+}
