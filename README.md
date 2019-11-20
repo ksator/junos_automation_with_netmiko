@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ksator/junos_automation_with_netmiko.svg?branch=master)](https://travis-ci.org/ksator/junos_automation_with_netmiko)  
+
 Netmiko is a multi-vendor python library to simplify SSH connections to network devices   
 This repo has Netmiko examples for Junos.  
 It convers how to: 
