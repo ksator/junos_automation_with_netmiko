@@ -1,5 +1,3 @@
 netmiko 
 ntc_templates
-pyyaml
-jinja
 yamllint 
